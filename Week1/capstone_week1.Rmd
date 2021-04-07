@@ -1,0 +1,23 @@
+---
+title: "Capstone"
+author: "Carlos Sanchez"
+date: "07/04/2021"
+output: html_document
+---
+
+```{r, setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, root.dir = "~/R courses/10_Capstone/Week1")
+```
+
+```{r}
+library(dplyr)
+library(ggplot2)
+```
+
+```{r}
+fileUrl <- "https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip"
+if(!file.exists("Coursera-Swiftkey.zip")){
+  download.file(fileUrl, "Coursera-SwiftKey.zip", method = "curl")
+  unzip("Coursera-SwiftKey.zip")
+}
+```
