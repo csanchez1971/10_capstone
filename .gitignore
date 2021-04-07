@@ -2,5 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
-./Week1/final/
-./Week1/*.zip
+*.zip
+/Week1/final/
